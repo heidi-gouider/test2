@@ -19,8 +19,11 @@ class Disc
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $picture = null;
 
-    #[ORM\ManyToOne(inversedBy: 'discs')]
+    #[ORM\ManyToOne(inversedBy: 'artist')]
     private ?artist $artist = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $label = null;
 
     public function getId(): ?int
     {
@@ -59,6 +62,18 @@ class Disc
     public function setArtist(?artist $artist): static
     {
         $this->artist = $artist;
+
+        return $this;
+    }
+
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    public function setLabel(string $label): static
+    {
+        $this->label = $label;
 
         return $this;
     }
