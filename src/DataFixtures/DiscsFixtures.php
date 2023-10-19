@@ -20,6 +20,7 @@ class DiscsFixtures extends Fixture
             ->setId($art['artist_id'])
             ->setName($art['artist_name'])
             ->setUrl($art['artist_url']);
+            // dd($artistDB);
 
             $manager->persist($artistDB);
 
@@ -35,8 +36,11 @@ class DiscsFixtures extends Fixture
             ->setTitle($d['disc_title'])
             ->setLabel($d['disc_label'])
             ->setPicture($d['disc_picture']);
+            // Obtenez l'artiste correspondant à partir de l'ID spécifié dans $d['artist_id']
             $artist = $artistRepo->find($d['artist_id']);
+            // Associez le disque à l'artiste
             $discDB->setArtist($artist);
+
             $manager->persist($discDB);
         }
         $manager->flush();

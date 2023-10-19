@@ -19,7 +19,7 @@ class Artist
     private ?string $name = null;
 
 
-    #[ORM\OneToMany(mappedBy: 'artist', targetEntity: Disc::class)]
+    #[ORM\OneToMany(mappedBy: 'discs', targetEntity: Disc::class)]
     private Collection $discs;
 
     #[ORM\Column(length: 50, nullable: true)]

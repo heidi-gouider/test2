@@ -39,14 +39,4 @@ $disc = array(
   array('disc_id' => '13','disc_title' => 'London Calling','disc_year' => '1971','disc_picture' => 'London Calling.jpeg','disc_label' => 'CBS','disc_genre' => 'Punk, New Wave','disc_price' => '33.00','artist_id' => '10'),
   array('disc_id' => '14','disc_title' => 'Beggars Banquet','disc_year' => '1968','disc_picture' => 'Beggars Banquet.jpeg','disc_label' => 'Rolling Stones Records','disc_genre' => 'Blues Rock, Classic Rock','disc_price' => '33.00','artist_id' => '1'),
   array('disc_id' => '15','disc_title' => 'Laboratory of sound','disc_year' => '1995','disc_picture' => 'Laboratory of sound.jpeg','disc_label' => 'Rebel Rec.','disc_genre' => 'Rock','disc_price' => '33.00','artist_id' => '9'),
-  array('disc_id' => '16','disc_title' => 'lalali','disc_year' => '2023','disc_picture' => NULL,'disc_label' => 'emi','disc_genre' => 'rock','disc_price' => NULL,'artist_id' => NULL),
-  array('disc_id' => '17','disc_title' => 'kluster','disc_year' => '2000','disc_picture' => NULL,'disc_label' => 'inde','disc_genre' => 'prog','disc_price' => NULL,'artist_id' => NULL),
-  array('disc_id' => '18','disc_title' => 'khfdskjh','disc_year' => '12121','disc_picture' => NULL,'disc_label' => 'fsddfsf','disc_genre' => 'hsiff','disc_price' => NULL,'artist_id' => NULL),
-  array('disc_id' => '19','disc_title' => 'ddd','disc_year' => '222','disc_picture' => NULL,'disc_label' => 'yyyyy','disc_genre' => 'yyyyyyyyy','disc_price' => NULL,'artist_id' => NULL),
-  array('disc_id' => '20','disc_title' => 'fffff','disc_year' => '222','disc_picture' => NULL,'disc_label' => 'hhh','disc_genre' => 'hhh','disc_price' => NULL,'artist_id' => NULL),
-  array('disc_id' => '21','disc_title' => 'ggggggggggg','disc_year' => '222','disc_picture' => NULL,'disc_label' => 'rrrrrrrr','disc_genre' => 'rrrrrrrrr','disc_price' => '121.00','artist_id' => NULL),
-  array('disc_id' => '22','disc_title' => 'gaga','disc_year' => '123','disc_picture' => NULL,'disc_label' => 'yeyey','disc_genre' => 'inde','disc_price' => '123.00','artist_id' => '4'),
-  array('disc_id' => '23','disc_title' => 'lili','disc_year' => '1111','disc_picture' => NULL,'disc_label' => 'emi','disc_genre' => 'rock','disc_price' => '45.00','artist_id' => '3'),
-  array('disc_id' => '24','disc_title' => 'dddd','disc_year' => '111','disc_picture' => NULL,'disc_label' => 'ssss','disc_genre' => 'dddddd','disc_price' => '111.00','artist_id' => '1'),
-  array('disc_id' => '25','disc_title' => 'cblabla','disc_year' => '2000','disc_picture' => NULL,'disc_label' => 'momo','disc_genre' => 'inde','disc_price' => '12.00','artist_id' => '4')
 );
