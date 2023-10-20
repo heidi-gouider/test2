@@ -19,7 +19,7 @@ class Disc
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $picture = null;
 
-    #[ORM\ManyToOne(inversedBy: 'artist')]
+    #[ORM\ManyToOne(inversedBy: 'discs')]
     private ?artist $artist = null;
 
     #[ORM\Column(length: 255)]

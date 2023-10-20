@@ -19,8 +19,8 @@ class Artist
     private ?string $name = null;
 
 
-    #[ORM\OneToMany(mappedBy: 'discs', targetEntity: Disc::class)]
-    private Collection $discs;
+    #[ORM\OneToMany(mappedBy: 'artist', targetEntity: Disc::class)]
+    private ?Collection $discs;
 
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $url = null;
@@ -60,7 +60,7 @@ class Artist
     /**
      * @return Collection<int, Disc>
      */
-    public function getDiscs(): Collection
+    public function getDiscs(): ?Collection
     {
         return $this->discs;
     }
