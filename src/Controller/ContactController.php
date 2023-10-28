@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\ContactFormType;
+// use App\Entity\Contact;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,17 +25,21 @@ class ContactController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
             // dd($data);
-            $objet = $data['objet'];
-            $adress = $data['email'];
-            $message = $data['message'];
+            $email = $data;
+            $adress = $data->getEmail();
+            $content = $data->getMessage();
+            // $adress = $data('email');
+            // $content = $data('message');
 
-            $email = (new Email)()
+            $email = (new Email())
             ->from($adress)
             ->to('admin@admin.com')
-            ->subject($objet)
-            ->text($message);
+            ->subject('objet')
+            ->text($content);
 
             $mailer->send($email);
+
+            return $this->redirectToRoute('app_accueil');
         }
 
         return $this->render('contact/index.html.twig', [
