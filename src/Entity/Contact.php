@@ -66,10 +66,10 @@ class Contact
         return $this;
     }
 // j'ajoute des contraintes de validation
-    public static function loadValidatorMetadata(ClassMetadata $metadata): void
-    {
-        $metadata->addPropertyConstraint('email', new Assert\Email([
-            'message' => '"{{ value }}" Format mail invalide.',
-        ]));
-    }
+    // public static function loadValidatorMetadata(ClassMetadata $metadata): void
+    // {
+    //     $metadata->addPropertyConstraint('email', new Assert\Email([
+    //         'message' => '"{{ value }}" Format mail invalide.',
+    //     ]));
+    // }
 }
