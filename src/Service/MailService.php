@@ -1,28 +1,38 @@
-namespace App\Service\MailService;
+<!-- namespace App\Service\MailService;
+
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
+use App\Entity\Contact;
 
 class MailService
 {
-    public function sendMail($expediteur, $destinataire, $sujet, $message){
-        // Récupération de l'entité Contact associée au formulaire
-            $contact = $form->getData();
+private $mailer;
 
-            // Récupération des propriétés de l'entité Contact
-            $address = $contact->getEmail();
-            // $subject = $contact->getObjet();
-            // $content = $contact->getMessage();
-            $content = 'objet : ' . $contact->getObjet() . "\n";
-            $content .= 'message : ' . $contact->getMessage();
-            // dd($contact);
+public function __construct(MailerInterface $mailer)
+{
+$this->mailer = $mailer;
+}
+public function sendMail($expediteur, $destinataire, $sujet, $message){
+// Récupération de l'entité Contact associée au formulaire
+$contact = $form->getData();
 
-            $email = (new Email())
-                ->from($address)
-                ->to('admin@admin.com')
-                ->subject('demande de contact')
-                ->text($content);
+// Récupération des propriétés de l'entité Contact
+$address = $contact->getEmail();
+// $subject = $contact->getObjet();
+// $content = $contact->getMessage();
+$content = 'objet : ' . $contact->getObjet() . "\n";
+$content .= 'message : ' . $contact->getMessage();
+// dd($contact);
 
-            // dd($email);
-            $mailer->send($email);
+$email = (new Email())
+->from($address)
+->to('admin@admin.com')
+->subject('demande de contact')
+->text($content);
+
+// dd($email);
+$mailer->send($email); -->
 
 
-    }
+}
 }
