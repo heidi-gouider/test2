@@ -4,7 +4,8 @@ namespace App\Controller;
 
 use App\Form\ContactFormType;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
-// use App\Entity\Contact;
+use App\Entity\Contact;
+use App\Service\MailService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
