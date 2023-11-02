@@ -15,7 +15,7 @@ class AccueilController extends AbstractController
 {
     private $artistRepo;
     private $discRepo;
-    // private $em;
+    private $em;
 
     public function __construct(ArtistRepository $artistRepo, DiscRepository $discRepo)
     {
@@ -27,6 +27,11 @@ class AccueilController extends AbstractController
     #[Route('/accueil', name: 'app_accueil')]
     public function index(): Response
     {
+            //on appelle le repository pour accéder à la fonction
+            $artistes = $this->artistRepo->getSomeArtists("Neil");
+
+            //on teste le contenu de la variable $artistes : dd() veut dire Dump and Die
+            dd($artistes); 
          //on appelle la fonction `findAll()` du repository de la classe `Artist` afin de récupérer tous les artists de la base de données;
          $artists = $this->artistRepo->findAll();
         dump($artists);
