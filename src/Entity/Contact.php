@@ -19,6 +19,9 @@ class Contact
     #[ORM\Column(length: 255)]
     private ?string $objet = null;
 
+    #[Assert\Email(
+        message: 'Format  email invalide.',
+    )]
     #[ORM\Column(length: 255)]
     private ?string $email = null;
 

@@ -31,7 +31,7 @@ class AccueilController extends AbstractController
             $artistes = $this->artistRepo->getSomeArtists("Neil");
 
             //on teste le contenu de la variable $artistes : dd() veut dire Dump and Die
-            dd($artistes); 
+            // dd($artistes); 
          //on appelle la fonction `findAll()` du repository de la classe `Artist` afin de récupérer tous les artists de la base de données;
          $artists = $this->artistRepo->findAll();
         dump($artists);
